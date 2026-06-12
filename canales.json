@@ -1,0 +1,88 @@
+[
+    {
+        "id": "tyc-sports",
+        "nombre": "TyC Sports",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "https://bestleague.top/tok.html?get=VHlDU3BvcnQ" },
+            { "nombre": "Servidor 2", "url": "https://bestleague.top/cvatt.html?get=VHlDU3BvcnQ&lang=1" },
+            { "nombre": "Servidor 3", "url": "https://la18hd.com/vivo/canales.php?stream=tycsports" }
+        ]
+    },
+    {
+        "id": "Telemundo",
+        "nombre": "Telemundo",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "https://bestleague.world/mpdk/?get=aHR0cHM6Ly9saXZlLW9uZWFwcC1wcmQtbmV3cy5ha2FtYWl6ZWQubmV0L0NvbnRlbnQvQ01BRl9PTDItQ1RSLTRzL0xpdmUvY2hhbm5lbChLREVOKS9tYXN0ZXIubXBk&key=MmExOTVjOTU4ODBlMzc2ODgyODZlMGE2MTE3YTMzNmY=&key2=ZTZjYmExYzUyZWJlZTE2Mjg5Nzc1ZjUxNjRkYWVjZTc=" },
+            { "nombre": "Servidor 2", "url": "https://sudamericaplay2.com/canal_8112/74telemundo.html" }
+        ]
+    },
+    {
+        "id": "Win-Sport",
+        "nombre": "Win Sport",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "https://sudamericaplay2.com/canal_41/45wsprts.php" }
+        ]
+    },
+    {
+        "id": "DSport",
+        "nombre": "DSport",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "https://sudamericaplay2.com/canal_8112/dsports4541.html" },
+            { "nombre": "Servidor 2", "url": "https://la18hd.com/vivo/canales.php?stream=dsports" },
+            { "nombre": "Servidor 3", "url": "https://streamtpday1.xyz/global1.php?stream=dsports" },
+            { "nombre": "Servidor 4", "url": "https://stream-xhd.com/live1.php?stream=dsports" },
+            { "nombre": "Servidor 5", "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://edge-live11-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzgxMzg1NjIxIiwic2lwIjoiODQuMjUyLjExNC4yIiwicGF0aCI6Ii9saXZlL2M2ZWRzL0NhbmFsNy9TQV9MaXZlX2Rhc2hfZW5jXy8iLCJzZXNzaW9uX2Nkbl9pZCI6IjBmYTNmMjYxYjVmMzkyNzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzIwMS4yMzUuNjYuMTE0IiwiYXVkIjoiNjIiLCJzb3VyY2VzIjpbODUsMTQ0LDIxMCw4Niw4OF19.TfEbtFnwSQODo0sREZQBOBLniPV_2TKN3CVWGb2sQfyrftpRzWqfZR4ijeLCh3x9rCAoF6RvgPpCt0Jhnul2Sg==/live/c7eds/Dsports_UY/SA_Live_dash_enc/Dsports_UY.mpd?ck=IjE0M2M3MTI5MmE2ZGQ1ODQwNGVmYWQyODNiMjIwNTM5IjoiOWZjZWZmMmYzZDcwZTJmNTY5ZDU1NjU0MDdkN2Y3NDMi&headers=eyJvcmlnaW4iOiJodHRwczovL3BvcnRhbC5hcHAuZmxvdy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly9wb3J0YWwuYXBwLmZsb3cuY29tLmFyLyJ9" }
+            ]
+    },
+    {
+        "id": "DSport-2",
+        "nombre": "DSport 2",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "https://la18hd.com/vivo/canales.php?stream=dsports2" }
+            ]
+    },
+    {
+        "id": "DSport-Plus",
+        "nombre": "DSport Plus",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "https://streamtpday1.xyz/global1.php?stream=dsportsplus" }
+            ]
+    },
+    {
+        "id": "TNT-Sports",
+        "nombre": "TNT Sports",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://edge-live16-sl.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzgxMzg2NDYxIiwic2lwIjoiODQuMjUyLjExNC4yIiwicGF0aCI6Ii9saXZlL2M0ZWRzL0NhbmFsNF9VUlUvU0FfTGl2ZV9kYXNoX2VuY18vIiwic2Vzc2lvbl9jZG5faWQiOiIyNGU3YmEwZWM5YzIxMTA3Iiwic2Vzc2lvbl9pZCI6IiIsImNsaWVudF9pZCI6IiIsImRldmljZV9pZCI6IiIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjEwNSIsInNvdXJjZXMiOls4NSwxNDQsMjEwLDg2LDg4XX0=.6i_3CfBBqY0uNjG234sPFDNq8gwPyPc4qVZbobwyucyxRLcjygPImNV6wpREyb6IHjNLNn15c6VYmgNEJLaiKg==/live/c6eds/TNT_Sports_HD/SA_Live_dash_enc/TNT_Sports_HD.mpd?ck=ImJjODBmYTNkYTY5NmU1MDNmOTQwZmRlNWY2ODFhMWM1IjoiZWE0NmU0ZTlmMTEzMmU4ZGQ3MWZiNzdmN2Q1NTA1OGEi&headers=eyJvcmlnaW4iOiJodHRwczovL3BvcnRhbC5hcHAuZmxvdy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly9wb3J0YWwuYXBwLmZsb3cuY29tLmFyLyJ9"},
+            { "nombre": "Servidor 2", "url": "https://la18hd.com/vivo/canal.php?stream=tntsports" },
+            { "nombre": "Servidor 3", "url": "https://streamtpday1.xyz/global1.php?stream=tntsports" }
+        ]
+    },
+    {
+        "id": "ESPN-Premium",
+        "nombre": "ESPN Premium",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://edge-live19-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzgxMzg2ODU5Iiwic2lwIjoiODQuMjUyLjExNC4yIiwicGF0aCI6Ii9saXZlL2M3ZWRzL0dFTl9UVi9TQV9MaXZlX2Rhc2hfZW5jXy8iLCJzZXNzaW9uX2Nkbl9pZCI6ImM3MTg1YWU4ODYzMTk0OTEiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzIwMS4yMzUuNjYuMTIzIiwiYXVkIjoiMzQ1Iiwic291cmNlcyI6Wzg1LDE0NCwyMTAsODYsODhdfQ==.0M2v_eChwAlqRX4fk1OApzhNLt9atsUBfRLg43qq8uFX09rdSzTtI6ODI97oWr2b3cY5QRVlRR9YKZSs3n3FIQ==/live/c7eds/Fox_Sports_Premiun_HD/SA_Live_dash_enc/Fox_Sports_Premiun_HD.mpd?ck=IjRjMjMwZGJjN2Y2YTRiZmE2YWQwYWE3M2ZmNzkyMzc0IjoiNDE4NmE3YzJhMTVmNTkwYTkzOTk4ODZmZWFlYzQyNTci&headers=eyJvcmlnaW4iOiJodHRwczovL3BvcnRhbC5hcHAuZmxvdy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly9wb3J0YWwuYXBwLmZsb3cuY29tLmFyLyJ9"},
+            { "nombre": "Servidor 2", "url": "https://la18hd.com/vivo/canal.php?stream=espnpremium" },
+            { "nombre": "Servidor 3", "url": "https://streamtpday1.xyz/global1.php?stream=espnpremium" }
+        ]
+    }  ,
+    {
+        "id": "ESPN",
+        "nombre": "ESPN",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor 1", "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://edge6-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzgxMzg2MzU0Iiwic2lwIjoiODQuMjUyLjExNC4yIiwicGF0aCI6Ii9saXZlL2M2ZWRzL0FyZ2VudGluaXNpbWEvU0FfTGl2ZV9kYXNoX2VuY18vIiwic2Vzc2lvbl9jZG5faWQiOiIxMjc2ODY5NjNlZjA0NDI1Iiwic2Vzc2lvbl9pZCI6IiIsImNsaWVudF9pZCI6IiIsImRldmljZV9pZCI6IiIsIm1heF9zZXNzaW9ucyI6MCwic2Vzc2lvbl9kdXJhdGlvbiI6MCwidXJsIjoiaHR0cHM6Ly8yMDEuMjM1LjY2LjEyMiIsImF1ZCI6IjIxOSIsInNvdXJjZXMiOls4NSwxNDQsMjEwLDg2LDg4XX0=.cm4ZU2RuQlYHtCS8zaXRX7YGV_bQWfx1XAhzslHIk5dUsDJDn6WjqHUs2BsIJBTFHUWl3DtlhfNe5t_838XLsQ==/live/c3eds/ESPN2HD/SA_Live_dash_enc/ESPN2HD.mpd?ck=ImU4ODRiNzExYWIxMTFiZWI4YTdiYTFlN2JjYmRjOWJmIjoiY2I4OWVlMzk2MTU5OWUzZTY0OGE1YWFkNjA4OTVmMzQi&headers=eyJvcmlnaW4iOiJodHRwczovL3BvcnRhbC5hcHAuZmxvdy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly9wb3J0YWwuYXBwLmZsb3cuY29tLmFyLyJ9"},
+            { "nombre": "Servidor 2", "url": "https://streamtpday1.xyz/global1.php?stream=espn" },
+            { "nombre": "Servidor 3", "url": "https://la18hd.com/vivo/canales.php?stream=espn" }
+        ]
+    }  
+]
+

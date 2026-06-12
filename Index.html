@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVSportLibre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand-section">
+                <div class="brand-logo"></div>
+                <h2>TVSportLibre</h2>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" id="search-input" class="search-input" placeholder="Buscar canal o categoría...">
+            </div>
+            
+            <ul id="channel-list" class="channel-list">
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            
+            <div class="player-container">
+                <div id="player-placeholder" class="player-placeholder">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"/></svg>
+                    <p>Selecciona un canal de la lista para comenzar</p>
+                </div>
+                <video id="video-player" class="player-element" controls></video>
+                <iframe id="iframe-player" class="player-element" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+            </div>
+
+            <div class="details-bar">
+                <div class="meta-info">
+                    <h1 id="current-channel-name">Ningún canal seleccionado</h1>
+                    <div id="status-badge" class="status-badge">
+                        <div class="status-indicator"></div>
+                        <span id="current-channel-status">Sistema listo</span>
+                    </div>
+                </div>
+                
+                <div class="controls-box">
+                    <div class="select-wrapper">
+                        <span class="select-label">Servidor:</span>
+                        <select id="server-selector" class="custom-select" disabled>
+                            <option value="">Selecciona un canal primero</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="app.js"></script>
+</body>
+</html>
