@@ -10,6 +10,14 @@
         ]
     },
     {
+        "id": "Fox-One",
+        "nombre": "Fox ONE",
+        "categoria": "Deportes",
+        "servidores": [
+            { "nombre": "Servidor Unico", "url": "https://sudamericaplay2.com/canal_8112/1foxone.html" }
+        ]
+    },
+    {
         "id": "Telemundo",
         "nombre": "Telemundo",
         "categoria": "Deportes",
@@ -44,12 +52,12 @@
         "nombre": "DSport",
         "categoria": "Deportes",
         "servidores": [
-            { "nombre": "Servidor 1", "url": "https://sudamericaplay2.com/canal_8112/dsports4541.html" },
+            { "nombre": "Servidor 1", "url": "https://sudamericaplay2.com/canal_8112/cza_dsports.html" },
             { "nombre": "Servidor 2", "url": "https://la18hd.com/vivo/canales.php?stream=dsports" },
             { "nombre": "Servidor 3", "url": "https://streamtpday1.xyz/global1.php?stream=dsports" },
             { "nombre": "Servidor 4", "url": "https://stream-xhd.com/live1.php?stream=dsports" },
-            { "nombre": "Servidor 5", "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://edge-live11-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzgxMzg1NjIxIiwic2lwIjoiODQuMjUyLjExNC4yIiwicGF0aCI6Ii9saXZlL2M2ZWRzL0NhbmFsNy9TQV9MaXZlX2Rhc2hfZW5jXy8iLCJzZXNzaW9uX2Nkbl9pZCI6IjBmYTNmMjYxYjVmMzkyNzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzIwMS4yMzUuNjYuMTE0IiwiYXVkIjoiNjIiLCJzb3VyY2VzIjpbODUsMTQ0LDIxMCw4Niw4OF19.TfEbtFnwSQODo0sREZQBOBLniPV_2TKN3CVWGb2sQfyrftpRzWqfZR4ijeLCh3x9rCAoF6RvgPpCt0Jhnul2Sg==/live/c7eds/Dsports_UY/SA_Live_dash_enc/Dsports_UY.mpd?ck=IjE0M2M3MTI5MmE2ZGQ1ODQwNGVmYWQyODNiMjIwNTM5IjoiOWZjZWZmMmYzZDcwZTJmNTY5ZDU1NjU0MDdkN2Y3NDMi&headers=eyJvcmlnaW4iOiJodHRwczovL3BvcnRhbC5hcHAuZmxvdy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly9wb3J0YWwuYXBwLmZsb3cuY29tLmFyLyJ9" }
-            ]
+            { "nombre": "Servidor 5", "url": "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#https://edge-live11-hr.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzgxMzg1NjIxIiwic2lwIjoiODQuMjUyLjExNC4yIiwicGF0aCI6Ii9saXZlL2M2ZWRzL0NhbmFsNy9TQV9MaXZlX2Rhc2hfZW5jXy8iLCJzZXNzaW9uX2Nkbl9pZCI6IjBmYTNmMjYxYjVmMzkyNzgiLCJzZXNzaW9uX2lkIjoiIiwiY2xpZW50X2lkIjoiIiwiZGV2aWNlX2lkIjoiIiwibWF4X3Nlc3Npb25zIjowLCJzZXNzaW9uX2R1cmF0aW9uIjowLCJ1cmwiOiJodHRwczovLzIwMS4yMzUuNjYuMTE0IiwiYXVkIjoiNjIiLCJzb3VyY2VzIjpbODUsMTQ0LDIxMCw4Niw4OF19.TfEbtFnwSQODo0sREZQBOBLniPV_2TKN3CVWGb2sQfyrftpRzWqfZR4ijeLCh3x9rCAoF6RvgPpCt0Jhnul2Sg==/live/c7eds/Dsports_UY/SA_Live_dash_enc/Dsports_UY.mpd?ck=IjE0M2M3MTI5MmE2ZGQ1ODQwNGVmYWQyODNiMjIwNTM5IjoiOWZjZWZmMmYzZDcwZTJmNTY5ZDU1NjU0MDdkN2Y3NDMi&headers=eyJvcmlnaW4iOiJodHRwczovL3BvcnRhbC5hcHAuZmxvdy5jb20uYXIiLCJyZWZlcmVyIjoiaHR0cHM6Ly9wb3J0YWwuYXBwLmZsb3cuY29tLmFyLyJ9" },
+            { "nombre": "Servidor 6", "url": "https://sudamericaplay2.com/canal_8112/dsports4541.html" }]
     },
     {
         "id": "DSport-2",
