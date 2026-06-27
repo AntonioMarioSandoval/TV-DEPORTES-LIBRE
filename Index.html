@@ -3,56 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FuchibolLibre</title>
+    <title>FuchibolLibre - Modo Dual</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="app-container">
-        <aside class="sidebar">
-            <div class="brand-section">
-                <div class="brand-logo"></div>
-                <h2>FuchibolLibre</h2>
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-inner">
+                
+                <div class="brand-section">
+                    <button id="toggle-sidebar" class="toggle-btn" title="Mostrar/Ocultar Menú">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                    <div class="brand-logo"></div>
+                    <h2>FuchibolLibre</h2>
+                </div>
+
+                <div class="screen-selector">
+                    <p>Controlar Pantalla:</p>
+                    <div class="screen-options">
+                        <label class="screen-radio">
+                            <input type="radio" name="active-screen" value="1" checked>
+                            <span>Pantalla 1</span>
+                        </label>
+                        <label class="screen-radio">
+                            <input type="radio" name="active-screen" value="2">
+                            <span>Pantalla 2</span>
+                        </label>
+                    </div>
+                    <button id="close-screen-2" class="close-screen-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        Cerrar Pantalla 2
+                    </button>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" class="search-input" placeholder="Buscar canal o categoría...">
+                </div>
+                
+                <ul id="channel-list" class="channel-list">
+                </ul>
             </div>
-            
-            <div class="search-box">
-                <input type="text" id="search-input" class="search-input" placeholder="Buscar canal o categoría...">
-            </div>
-            
-            <ul id="channel-list" class="channel-list">
-            </ul>
         </aside>
 
         <main class="main-content">
-            
-            <div class="player-container">
-                <div id="player-placeholder" class="player-placeholder">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"/></svg>
-                    <p>Selecciona un canal de la lista para comenzar</p>
-                </div>
-                <video id="video-player" class="player-element" controls></video>
-                <iframe id="iframe-player" class="player-element" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
-            </div>
-
-            <div class="details-bar">
-                <div class="meta-info">
-                    <h1 id="current-channel-name">Ningún canal seleccionado</h1>
-                    <div id="status-badge" class="status-badge">
-                        <div class="status-indicator"></div>
-                        <span id="current-channel-status">Sistema listo</span>
-                    </div>
-                </div>
+            <div class="screens-container" id="screens-container">
                 
-                <div class="controls-box">
-                    <div class="select-wrapper">
-                        <span class="select-label">Servidor:</span>
-                        <select id="server-selector" class="custom-select" disabled>
-                            <option value="">Selecciona un canal primero</option>
-                        </select>
+                <div class="screen-column" id="screen-1">
+                    <div class="player-container">
+                        <div id="player-placeholder-1" class="player-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"/></svg>
+                            <p>Pantalla 1: Selecciona un canal</p>
+                        </div>
+                        <video id="video-player-1" class="player-element" controls></video>
+                        <iframe id="iframe-player-1" class="player-element" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+                    </div>
+
+                    <div class="details-bar">
+                        <div class="meta-info">
+                            <h1 id="current-channel-name-1">Pantalla 1: Inactiva</h1>
+                            <div id="status-badge-1" class="status-badge">
+                                <div class="status-indicator"></div>
+                                <span id="current-channel-status-1">Sistema listo</span>
+                            </div>
+                        </div>
+
+                        <div class="controls-box">
+                            <div class="select-wrapper">
+                                <select id="server-selector-1" class="custom-select" disabled>
+                                    <option value="">Selecciona un canal</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <div class="screen-column hidden" id="screen-2">
+                    <div class="player-container">
+                        <div id="player-placeholder-2" class="player-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"/></svg>
+                            <p>Pantalla 2: Selecciona un canal</p>
+                        </div>
+                        <video id="video-player-2" class="player-element" controls></video>
+                        <iframe id="iframe-player-2" class="player-element" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+                    </div>
+
+                    <div class="details-bar">
+                        <div class="meta-info">
+                            <h1 id="current-channel-name-2">Pantalla 2: Inactiva</h1>
+                            <div id="status-badge-2" class="status-badge">
+                                <div class="status-indicator"></div>
+                                <span id="current-channel-status-2">Sistema listo</span>
+                            </div>
+                        </div>
+                        
+                        <div class="controls-box">
+                            <div class="select-wrapper">
+                                <select id="server-selector-2" class="custom-select" disabled>
+                                    <option value="">Selecciona un canal</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </main>
     </div>
 

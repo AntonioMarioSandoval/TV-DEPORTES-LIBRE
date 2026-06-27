@@ -44,14 +44,64 @@ body {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), height 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.collapsed {
+    width: 68px;
+}
+
+.sidebar-inner {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.brand-logo, .brand-section h2, .screen-selector, .search-box, .channel-list {
+    transition: opacity 0.2s ease;
+}
+
+@media (min-width: 901px) {
+    .sidebar.collapsed .brand-logo,
+    .sidebar.collapsed .brand-section h2,
+    .sidebar.collapsed .screen-selector,
+    .sidebar.collapsed .search-box,
+    .sidebar.collapsed .channel-list {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .brand-section {
-    padding: 28px 24px;
+    padding: 0 16px;
+    height: 72px;
     border-bottom: 1px solid var(--border);
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 6px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--text-active);
 }
 
 .brand-logo {
@@ -60,6 +110,7 @@ body {
     background-color: var(--accent);
     border-radius: 50%;
     box-shadow: 0 0 12px var(--accent);
+    flex-shrink: 0;
 }
 
 .brand-section h2 {
@@ -69,6 +120,87 @@ body {
     background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
+.screen-selector {
+    padding: 16px 24px 0 24px;
+}
+
+.screen-selector p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.screen-options {
+    display: flex;
+    gap: 10px;
+}
+
+.screen-radio {
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.screen-radio input {
+    display: none;
+}
+
+.screen-radio span {
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+    background-color: var(--bg-input);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.screen-radio input:checked + span {
+    background-color: rgba(59, 130, 246, 0.15);
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.close-screen-btn {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid transparent;
+    padding: 0;
+    border-radius: var(--radius-sm);
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.close-screen-btn.visible {
+    opacity: 1;
+    pointer-events: auto;
+    height: 38px;
+    margin-top: 10px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.close-screen-btn:hover {
+    background-color: rgba(239, 68, 68, 0.2);
 }
 
 .search-box {
@@ -179,21 +311,46 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    overflow: hidden; 
+}
+
+.screens-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex: 1; 
+    min-height: 0; 
+    align-items: center;        
+    justify-content: center;    
+}
+
+.screen-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    overflow-y: auto;
+    min-width: 0;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center; 
+}
+
+.screen-column.hidden {
+    display: none;
 }
 
 .player-container {
-    left: 5%;
-    width: 88%;
-    height: 100%;
+    width: 100%;
+    max-height: calc(100vh - 140px);
     aspect-ratio: 16 / 9;
+    margin: 0 auto; 
     background-color: #000000;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     border: 1px solid var(--border);
     position: relative;
+    flex-shrink: 1; 
 }
 
 .player-element {
@@ -201,8 +358,11 @@ body {
     height: 100%;
     display: none;
     border: none;
-}
 
+}
+iframe.player-element {
+    transform-origin: 0 0;
+}
 .player-element.visible {
     display: block;
 }
@@ -233,19 +393,31 @@ body {
     background-color: var(--bg-sidebar);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    padding: 24px 32px;
+    padding: 18px 24px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row; 
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 24px;
+    flex-shrink: 0; 
+}
+
+.meta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    flex: 1; 
 }
 
 .meta-info h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: -0.01em;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .status-badge {
@@ -271,20 +443,14 @@ body {
 .controls-box {
     display: flex;
     align-items: center;
-    gap: 14px;
+    flex-shrink: 0; 
 }
 
 .select-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.select-label {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    margin-right: 12px;
-    font-weight: 500;
+    width: 100%;
 }
 
 .custom-select {
@@ -293,13 +459,14 @@ body {
     background-color: var(--bg-input);
     color: var(--text-main);
     border: 1px solid var(--border);
-    padding: 12px 40px 12px 16px;
+    padding: 10px 36px 10px 16px;
     border-radius: var(--radius-sm);
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
     outline: none;
-    min-width: 220px;
+    width: 100%;
+    min-width: 160px; 
     transition: var(--transition);
 }
 
@@ -326,6 +493,7 @@ body {
     border-top: 5px solid var(--text-muted);
     pointer-events: none;
 }
+
 @media (max-width: 900px) {
     .app-container {
         flex-direction: column;
@@ -334,59 +502,31 @@ body {
     .main-content {
         order: 1; 
         padding: 0;
-        gap: 0;
         flex: 0 0 auto; 
-        overflow: visible; 
+        overflow-y: auto; 
+    }
+
+    .screens-container {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start; 
     }
 
     .player-container {
-        width: 100%;
-        left: 0; 
         border-radius: 0;
         border-left: none;
         border-right: none;
         border-top: none;
-        aspect-ratio: 16 / 9; 
+        max-height: none; 
     }
 
     .details-bar {
-        padding: 12px 16px;
+        flex-direction: column; 
+        align-items: stretch;
+        gap: 15px;
         border-radius: 0;
         border: none;
         border-bottom: 1px solid var(--border);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .meta-info {
-        flex: 1; 
-        min-width: 0; 
-    }
-
-    .meta-info h1 {
-        font-size: 1.1rem;
-        margin-bottom: 4px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; 
-    }
-
-    .controls-box {
-        flex-shrink: 0;
-    }
-
-    .select-label {
-        display: none; 
-    }
-
-    .custom-select {
-        min-width: 110px; 
-        width: auto;
-        padding: 8px 28px 8px 12px;
-        font-size: 0.85rem;
     }
 
     .sidebar {
@@ -397,22 +537,15 @@ body {
         border-right: none;
         display: flex;
         flex-direction: column;
-        overflow: hidden; 
     }
 
-    .brand-section {
-        padding: 12px 16px;
-        flex-shrink: 0;
+    .sidebar.collapsed {
+        height: 72px; 
+        width: 100%;
+        border-bottom: none;
     }
 
-    .search-box {
-        padding: 10px 16px;
-        flex-shrink: 0;
-    }
-
-    .channel-list {
-        padding: 0 16px 16px 16px;
-        overflow-y: auto;
-        flex: 1;
+    .sidebar-inner {
+        width: 100%;
     }
 }
